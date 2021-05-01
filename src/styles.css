@@ -12,3 +12,7 @@ div.card-header {
 .table {
   margin-top: 10px;
 }
+
+body {
+  padding: 20px;
+}

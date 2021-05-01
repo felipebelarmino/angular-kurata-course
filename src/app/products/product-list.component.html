@@ -14,11 +14,12 @@
     </div>
     <div class="table-responsive">
       <table class="table" *ngIf="products.length">
-        
         <thead>
           <tr>
             <th>
-              <button class="btn btn-primary">Show Image</button>
+              <button class="btn btn-primary" (click)="toggleImage()">
+                {{ !showImage ? "Show" : "Hide" }} Image
+              </button>
             </th>
             <th>Produtct</th>
             <th>Code</th>
@@ -27,7 +28,24 @@
             <th>5 Star Rating</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          <tr *ngFor="let product of products">
+            <td>
+              <img
+                *ngIf="showImage"
+                [src]="product.imageUrl"
+                [title]="product.productName"
+                [style.width.px]="imageWidth"
+                [style.margin.px]="imageMargin"
+              />
+            </td>
+            <td>{{ product.productName }}</td>
+            <td>{{ product.productCode }}</td>
+            <td>{{ product.releaseDate }}</td>
+            <td>{{ product.price }}</td>
+            <td>{{ product.starRating }}</td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>

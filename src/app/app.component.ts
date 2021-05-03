@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
         </li>
       </ul>
       <div class="container">
-        <router-outlet></router-outlet>
+        <!-- <router-outlet></router-outlet> -->
       </div>
     </nav>
   `,

@@ -18,7 +18,7 @@ import { Component } from '@angular/core';
   `,
 })
 export class AppComponent {
-  title: string = 'Infoway - Admin';
+  title: string = 'apm-new';
 }
 
 //navbar navbar-expand navbar-light bg-light

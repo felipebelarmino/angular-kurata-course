@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'infoway'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_506f4dafceb64ea9aa9827b0336b9778 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_f575b83344dc45ab8e2eba705393bcec }}
         package: .
